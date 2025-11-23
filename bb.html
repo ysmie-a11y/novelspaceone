@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flower</title>
+    <style>
+        body {
+            font-family: 'poppins', sans-serif;
+            text-align: center;
+            background-color: #cbcbc2;
+            color: #743939;
+        }
+        .a {
+            background-color:rgb(161, 197, 182) ;
+            padding: 10px;
+        }
+        .a p {
+            line-height: 1.5px;
+            color: rgb(152, 127, 140);
+        }
+
+        .etalase {
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+            gap: 20px;
+            padding: 30px;
+            max-width: 1100px;
+            margin: auto;
+        }
+        .card {
+            background-color: rgb(214, 212, 199);
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+            padding: 15px;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card img {
+            width: 50%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .card h3 {
+            margin: 15px 0 5px;
+            color: rgb(152, 127, 140);
+            font-size: 18px;
+        }
+        .card p {
+            margin: 10px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: rgb(161, 197, 182);
+            color: black;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+        .btn:hover {
+            background-color: rgb(41, 142, 116);
+        }
+        footer {
+            text-align: center;
+            background: rgb(161, 197, 182);
+            color: black;
+            padding: 10px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="a">
+    <h1>NovelSpace</h1>
+    <p>"Setiap Lembar Menyimpan Rasa"</p>
+    </div>
+    <section class="etalase">
+        <div class="card">
+            <img src="gadis kretek.jpeg" alt="satin">
+            <h3>Gadis Kretek</h3>
+            <p name="harga">Rp 150.000</p>
+            <a href="detail2.php?id=1" class="btn">Detail</a>
+        </div>
+
+        <div class="card">
+            <img src="halemora.jpeg" alt="mawar">
+            <h3>Halemorra</h3>
+            <P>Rp 120.000</P>
+            <a href="detail2.php?id=2" class="btn">Detail</a>
+        </div>
+
+        <div class="card">
+            <img src="makeumine.jpeg" alt="tulip">
+            <h3>Make U Mine</h3>
+            <P>Rp 135.000</P>
+            <a href="detail2.php?id=3" class="btn">Detail</a>
+        </div>
+
+        <div class="card">
+            <img src="ditanahlada.jpeg" alt="tulip">
+            <h3>Ditanah Lada</h3>
+            <P>Rp 110.000</P>
+            <a href="detail2.php?id=4" class="btn">Detail</a>
+        </div>
+
+        <div class="card">
+            <img src="SMAsekalilagi.jpeg" alt="mawar">
+            <h3>SMA Sekali Lagi</h3>
+            <P>Rp 140.000</P>
+            <a href="detail2.php?id=5" class="btn">Detail</a>
+        </div>
+
+        <div class="card">
+            <img src="rewritemyheart.jpeg" alt="mawar">
+            <h3>Rewrite My Heart</h3>
+            <P>Rp 145.000</P>
+            <a href="detail2.php?id=6" class="btn">Detail</a>
+        </div>
+    </section>
+
+    <footer>
+        &copy; NovelSpace | Semua Hak Dilindungi
+    </footer>
+</body>
+</html>
